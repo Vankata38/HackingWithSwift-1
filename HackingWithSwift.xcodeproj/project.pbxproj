@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021EFE422496D83000760F28 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021EFE412496D83000760F28 /* DetailVC.swift */; };
 		02217F79249697F1006A944A /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02217F6F249697F1006A944A /* nssl0049.jpg */; };
 		02217F7A249697F1006A944A /* nssl0046.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02217F70249697F1006A944A /* nssl0046.jpg */; };
 		02217F7B249697F1006A944A /* nssl0091.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02217F71249697F1006A944A /* nssl0091.jpg */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		021EFE412496D83000760F28 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		02217F6F249697F1006A944A /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		02217F70249697F1006A944A /* nssl0046.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0046.jpg; sourceTree = "<group>"; };
 		02217F71249697F1006A944A /* nssl0091.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0091.jpg; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				023BC563249549740010D206 /* MainVC.swift */,
+				021EFE412496D83000760F28 /* DetailVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				023BC564249549740010D206 /* MainVC.swift in Sources */,
+				021EFE422496D83000760F28 /* DetailVC.swift in Sources */,
 				023BC560249549740010D206 /* AppDelegate.swift in Sources */,
 				023BC562249549740010D206 /* SceneDelegate.swift in Sources */,
 			);
