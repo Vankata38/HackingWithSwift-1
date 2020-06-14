@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		023BC560249549740010D206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BC55F249549740010D206 /* AppDelegate.swift */; };
 		023BC562249549740010D206 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BC561249549740010D206 /* SceneDelegate.swift */; };
-		023BC564249549740010D206 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BC563249549740010D206 /* ViewController.swift */; };
+		023BC564249549740010D206 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BC563249549740010D206 /* MainVC.swift */; };
 		023BC567249549740010D206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023BC565249549740010D206 /* Main.storyboard */; };
 		023BC569249549790010D206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023BC568249549790010D206 /* Assets.xcassets */; };
 		023BC56C249549790010D206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023BC56A249549790010D206 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		023BC55C249549740010D206 /* HackingWithSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackingWithSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		023BC55F249549740010D206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		023BC561249549740010D206 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		023BC563249549740010D206 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		023BC563249549740010D206 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		023BC566249549740010D206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		023BC568249549790010D206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		023BC56B249549790010D206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,39 @@
 		023BC55E249549740010D206 /* HackingWithSwift */ = {
 			isa = PBXGroup;
 			children = (
-				023BC55F249549740010D206 /* AppDelegate.swift */,
-				023BC561249549740010D206 /* SceneDelegate.swift */,
-				023BC563249549740010D206 /* ViewController.swift */,
-				023BC565249549740010D206 /* Main.storyboard */,
+				023BC57324954C190010D206 /* Delegates */,
+				023BC57424954C2B0010D206 /* Storyboards */,
+				023BC57524954C450010D206 /* VCs */,
 				023BC568249549790010D206 /* Assets.xcassets */,
-				023BC56A249549790010D206 /* LaunchScreen.storyboard */,
 				023BC56D249549790010D206 /* Info.plist */,
 			);
 			path = HackingWithSwift;
+			sourceTree = "<group>";
+		};
+		023BC57324954C190010D206 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				023BC55F249549740010D206 /* AppDelegate.swift */,
+				023BC561249549740010D206 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		023BC57424954C2B0010D206 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				023BC565249549740010D206 /* Main.storyboard */,
+				023BC56A249549790010D206 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		023BC57524954C450010D206 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				023BC563249549740010D206 /* MainVC.swift */,
+			);
+			path = VCs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				023BC564249549740010D206 /* ViewController.swift in Sources */,
+				023BC564249549740010D206 /* MainVC.swift in Sources */,
 				023BC560249549740010D206 /* AppDelegate.swift in Sources */,
 				023BC562249549740010D206 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2Z5VT54PS;
 				INFOPLIST_FILE = HackingWithSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2Z5VT54PS;
 				INFOPLIST_FILE = HackingWithSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

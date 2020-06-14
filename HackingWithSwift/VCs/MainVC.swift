@@ -8,13 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainVC: UIViewController {
 
+    // MARK: - Properties
+    
+    
+    // MARK: - App cycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        
+
     }
-
-
+    
+    
+    //MARK: - Methods
+    
+    
 }
-
