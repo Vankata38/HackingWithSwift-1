@@ -29,6 +29,7 @@ class MainVC: UITableViewController {
                 pictures.append(item)
             }
         }
+        pictures.sort()
     }
     
     // Set the number of rows
@@ -47,6 +48,8 @@ class MainVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailVC {
             vc.imageName = pictures[indexPath.row]
+            vc.imageNumber = indexPath.row + 1
+            vc.arrayCount = pictures.count
             navigationController?.pushViewController(vc, animated: true)
         }
     }

@@ -13,19 +13,24 @@ class DetailVC: UIViewController {
     // MARK: - Properties
     @IBOutlet var imageView: UIImageView!
     var imageName: String?
+    var imageNumber: Int?
+    var arrayCount: Int?
     
     
     // MARK: - App lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = imageName
+
         navigationItem.largeTitleDisplayMode = .never
+        
+        guard imageNumber != 0 && arrayCount != 0 else {
+            return
+        }
+        title = ("Picture \(imageNumber!) of \(arrayCount!)")
         
         if let imageToLoad = imageName {
             imageView.image = UIImage(named: imageToLoad)
         }
-        
     }
     
     // View controller is about to appear
